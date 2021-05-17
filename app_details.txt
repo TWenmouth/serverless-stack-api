@@ -1,23 +1,25 @@
-Service Information
+ervice Information
 service: notes-api
 stage: prod
 region: us-east-1
 stack: notes-api-prod
-resources: 32
+resources: 38
 api keys:
   None
 endpoints:
-  POST - https://un4vq9e36a.execute-api.us-east-1.amazonaws.com/prod/notes
-  GET - https://un4vq9e36a.execute-api.us-east-1.amazonaws.com/prod/notes/{id}
-  GET - https://un4vq9e36a.execute-api.us-east-1.amazonaws.com/prod/notes
-  PUT - https://un4vq9e36a.execute-api.us-east-1.amazonaws.com/prod/notes/{id}
-  DELETE - https://un4vq9e36a.execute-api.us-east-1.amazonaws.com/prod/notes/{id}
+  POST - https://0f7jby961h.execute-api.us-east-1.amazonaws.com/prod/notes
+  GET - https://0f7jby961h.execute-api.us-east-1.amazonaws.com/prod/notes/{id}
+  GET - https://0f7jby961h.execute-api.us-east-1.amazonaws.com/prod/notes
+  PUT - https://0f7jby961h.execute-api.us-east-1.amazonaws.com/prod/notes/{id}
+  DELETE - https://0f7jby961h.execute-api.us-east-1.amazonaws.com/prod/notes/{id}
+  POST - https://0f7jby961h.execute-api.us-east-1.amazonaws.com/prod/billing
 functions:
   create: notes-api-prod-create
   get: notes-api-prod-get
   list: notes-api-prod-list
   update: notes-api-prod-update
   delete: notes-api-prod-delete
+  billing: notes-api-prod-billing
 layers:
   None
 
@@ -35,7 +37,7 @@ api-gateway-region:	us-east-1
   
 Stripe
 Publishable key:	pk_test_51IqHoRLNNxfgiKF3VmyNWbGaIFzwTfDwKZuytZY8d1O78QDQVcV6d57hkGd8xL0eHkThKE1gWeiekg7PVzOU2tON000QVOKlGN
-Test key:			sk_test_51IqHoRLNNxfgiKF3S7HCyz8xgSCf5mtkH91ARaSDVeXgbjHhXNsfVHY1zCiu8m5jt2Pi2y0n7YP8NekH56We0mKH00BDTDqx5u
+Secret key:			sk_test_51IqHoRLNNxfgiKF3S7HCyz8xgSCf5mtkH91ARaSDVeXgbjHhXNsfVHY1zCiu8m5jt2Pi2y0n7YP8NekH56We0mKH00BDTDqx5u
 
 
 
